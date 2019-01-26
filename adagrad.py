@@ -1,9 +1,9 @@
 import math  
 def f(x):  
-    return 4 * x**3 + 3 * x**2 - 18*x - 7  
+    return 4 * x**3 + 3 * x**2 - 18 * x - 7  
   
 def derivative_f(x):  
-    return 12 * x**2 +6*x -18  
+    return 12 * x**2 +6 * x - 18  
   
   
 x = 0.0  
@@ -25,4 +25,4 @@ for i in range(100000):
         gradient = derivative_f(x)  
         sum += gradient**2
         x = x - learning_rate * gradient / (math.sqrt(sum / (i + 1)) + e)  
-        y = f(x)  
+        y = f(x) 
